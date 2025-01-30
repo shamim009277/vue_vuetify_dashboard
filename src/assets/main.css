@@ -1,0 +1,29 @@
+@import './base.css';
+
+#app {
+  margin: 0 auto;
+  padding: 0rem;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+  padding: 3px;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+.v-application{
+  background-color:#EDF2FA !important;
+}
+
+.v-item-list-custom{
+  min-height: 25px !important;
+  width: 100%;
+}
