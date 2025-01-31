@@ -102,7 +102,6 @@
                         <template v-slot:title>
                             Outlined Alert
                         </template>
-
                         Maecenas ullamcorper, dui et placerat feugiat, eros pede varius nisi, condimentum viverra felis
                         nunc et lorem.
                         
