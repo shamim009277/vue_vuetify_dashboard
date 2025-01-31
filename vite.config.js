@@ -12,7 +12,7 @@ export default defineConfig({
     vueDevTools(),
     vuetify({ autoImport: true })
   ],
-  base: '/',  // এখানে 'repository-name' আপনার GitHub রিপোজিটরির নাম হবে
+  base: '/vue_vuetify_dashboard',  // এখানে 'repository-name' আপনার GitHub রিপোজিটরির নাম হবে
   build: {
     outDir: 'dist',  // ভিউ প্রোজেক্টের বিল্ড ফোল্ডার
   },
