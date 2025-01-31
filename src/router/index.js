@@ -8,6 +8,8 @@ import Card from '@/views/comp/Card.vue'
 import Button from '@/views/comp/Button.vue'
 import Form from '@/views/comp/Form.vue' 
 import FormLayout from '@/views/comp/FormLayout.vue' 
+import Login from '@/views/authentication/Login.vue'
+import Register from '@/views/authentication/Register.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -56,6 +58,16 @@ const router = createRouter({
       path: '/form-layout',
       name: 'formlayout',
       component: FormLayout,
+    },
+    {
+      path: '/login',
+      name: 'login',
+      component: Login,
+    },
+    {
+      path: '/register',
+      name: 'register',
+      component: Register,
     },
   ],
 })

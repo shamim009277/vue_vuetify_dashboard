@@ -72,6 +72,22 @@
                         value="formlayout"></v-list-item>
                 </RouterLink>
             </v-list-group>
+
+            <v-list-group value="Authentication" prepend-icon="mdi-lock" density="compact" nav
+                active-class="custom-exact-active">
+                <template v-slot:activator="{ props }">
+                    <v-list-item v-bind="props" title="Authentication"></v-list-item>
+                </template>
+
+                <RouterLink :to="{ name: 'login' }" target="_blank" active-class="custom-exact-active" style="display: flex;">
+                    <v-list-item class="v-item-list-custom" prepend-icon="mdi-plus" title="Login"
+                        value="login" target="_blank"></v-list-item>
+                </RouterLink>
+                <RouterLink :to="{ name: 'register' }" active-class="custom-exact-active" style="display: flex;">
+                    <v-list-item class="v-item-list-custom" prepend-icon="mdi-plus" title="Register"
+                        value="register"></v-list-item>
+                </RouterLink>
+            </v-list-group>
         </v-list>
     </v-navigation-drawer>
 </template>
