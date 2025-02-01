@@ -1,7 +1,6 @@
-
 <script setup>
-import { ref,computed } from "vue";
-import { RouterView,useRoute } from 'vue-router'
+import { ref, computed } from "vue";
+import { RouterView, useRoute } from 'vue-router'
 import Footer from '@/components/Footer.vue'
 import Topbar from '@/components/Topbar.vue'
 import Sidebar from '@/components/Sidebar.vue'
@@ -9,7 +8,7 @@ const isDrawerOpen = ref(true);
 const route = useRoute();
 
 // Define routes where sidebar and topbar should be hidden
-const hiddenRoutes = ["/login", "/register", "/forgot-password"];
+const hiddenRoutes = ["/login", "/register", "/forget-password", "/reset-password"];
 const showLayout = computed(() => !hiddenRoutes.includes(route.path));
 
 const toggleDrawer = () => {
@@ -33,9 +32,9 @@ const toggleDrawer = () => {
       </v-main>
 
       <!-- Footer -->
-       <div v-if="showLayout">
+      <div v-if="showLayout">
         <Footer />
-       </div>
+      </div>
     </v-container>
   </v-app>
 </template>
@@ -44,6 +43,7 @@ const toggleDrawer = () => {
 body {
   margin: 0;
 }
+
 .card-border-purple {
   border-left: 3px solid #7461E8 !important;
 }
@@ -63,7 +63,8 @@ body {
 .v-list-item__content {
   display: flex;
 }
-.footer{
+
+.footer {
   height: 30px;
 }
 

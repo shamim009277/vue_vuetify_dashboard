@@ -10,6 +10,8 @@ import Form from '@/views/comp/Form.vue'
 import FormLayout from '@/views/comp/FormLayout.vue' 
 import Login from '@/views/authentication/Login.vue'
 import Register from '@/views/authentication/Register.vue'
+import ForgetPassword from '@/views/authentication/ForgetPass.vue'
+import ResetPassword from '@/views/authentication/ResetPassword.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -68,6 +70,16 @@ const router = createRouter({
       path: '/register',
       name: 'register',
       component: Register,
+    },
+    {
+      path: '/forget-password',
+      name: 'forgetpassword',
+      component: ForgetPassword,
+    },
+    {
+      path: '/reset-password',
+      name: 'resetpassword',
+      component: ResetPassword,
     },
   ],
 })

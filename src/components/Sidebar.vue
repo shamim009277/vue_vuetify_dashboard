@@ -87,6 +87,14 @@
                     <v-list-item class="v-item-list-custom" prepend-icon="mdi-plus" title="Register"
                         value="register"></v-list-item>
                 </RouterLink>
+                <RouterLink :to="{ name: 'forgetpassword' }" active-class="custom-exact-active" style="display: flex;">
+                    <v-list-item class="v-item-list-custom" prepend-icon="mdi-plus" title="Forgot Password"
+                        value="forgetpassword"></v-list-item>
+                </RouterLink>
+                <RouterLink :to="{ name: 'resetpassword' }" active-class="custom-exact-active" style="display: flex;">
+                    <v-list-item class="v-item-list-custom" prepend-icon="mdi-plus" title="Reset Password"
+                        value="resetpassword"></v-list-item>
+                </RouterLink>
             </v-list-group>
         </v-list>
     </v-navigation-drawer>
