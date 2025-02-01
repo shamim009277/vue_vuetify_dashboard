@@ -96,6 +96,26 @@
                         value="resetpassword"></v-list-item>
                 </RouterLink>
             </v-list-group>
+
+            <v-list-group value="Error" prepend-icon="mdi-alert" density="compact" nav
+                active-class="custom-exact-active">
+                <template v-slot:activator="{ props }">
+                    <v-list-item v-bind="props" title="Errors"></v-list-item>
+                </template>
+
+                <RouterLink :to="{ name: 'error404page' }" active-class="custom-exact-active" style="display: flex;">
+                    <v-list-item class="v-item-list-custom" prepend-icon="mdi-plus" title="404 Error"
+                        value="error404page"></v-list-item>
+                </RouterLink>
+                <RouterLink :to="{ name: 'error500page' }" active-class="custom-exact-active" style="display: flex;">
+                    <v-list-item class="v-item-list-custom" prepend-icon="mdi-plus" title="500 Error"
+                        value="error500page"></v-list-item>
+                </RouterLink>
+                <RouterLink :to="{ name: 'blankpage' }" active-class="custom-exact-active" style="display: flex;">
+                    <v-list-item class="v-item-list-custom" prepend-icon="mdi-plus" title="Blank Page"
+                        value="blankpage"></v-list-item>
+                </RouterLink>
+            </v-list-group>
         </v-list>
     </v-navigation-drawer>
 </template>

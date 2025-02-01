@@ -12,6 +12,9 @@ import Login from '@/views/authentication/Login.vue'
 import Register from '@/views/authentication/Register.vue'
 import ForgetPassword from '@/views/authentication/ForgetPass.vue'
 import ResetPassword from '@/views/authentication/ResetPassword.vue'
+import BlankPage from '@/views/error/BlankPage.vue'
+import Error500Page from '@/views/error/500Page.vue'
+import Er404Page from '@/views/error/404Page.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -80,6 +83,21 @@ const router = createRouter({
       path: '/reset-password',
       name: 'resetpassword',
       component: ResetPassword,
+    },
+    {
+      path: '/blank-page',
+      name: 'blankpage',
+      component: BlankPage,
+    },
+    {
+      path: '/error-404-page',
+      name: 'error404page',
+      component: Er404Page,
+    },
+    {
+      path: '/error-500-page',
+      name: 'error500page',
+      component: Error500Page,
     },
   ],
 })
