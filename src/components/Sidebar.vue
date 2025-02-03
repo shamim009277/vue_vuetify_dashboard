@@ -38,6 +38,10 @@
                     <v-list-item class="v-item-list-custom" prepend-icon="mdi-plus" title="Cards"
                         value="card"></v-list-item>
                 </RouterLink>
+                <RouterLink :to="{ name: 'dialogs' }" active-class="custom-exact-active" style="display: flex;">
+                    <v-list-item class="v-item-list-custom" prepend-icon="mdi-plus" title="Dialogs"
+                        value="dialogs"></v-list-item>
+                </RouterLink>
             </v-list-group>
 
 

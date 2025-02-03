@@ -15,6 +15,7 @@ import ResetPassword from '@/views/authentication/ResetPassword.vue'
 import BlankPage from '@/views/error/BlankPage.vue'
 import Error500Page from '@/views/error/500Page.vue'
 import Er404Page from '@/views/error/404Page.vue'
+import Dialogs from '@/views/comp/Dialog.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -48,6 +49,11 @@ const router = createRouter({
       path: '/card',
       name: 'card',
       component: Card,
+    },
+    {
+      path: '/dialogs',
+      name: 'dialogs',
+      component: Dialogs,
     },
     {
       path: '/buttons',
